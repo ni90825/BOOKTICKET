@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "45739582790",
+    "project_id": "find-seats",
+    "storage_bucket": "find-seats.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:45739582790:android:8b33b6cefc3d71a27b7147",
+        "android_client_info": {
+          "package_name": "com.example.bookmyticket"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDU3_BkSqt6qpmo7BTaMM8P7adAxxMjbLg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
