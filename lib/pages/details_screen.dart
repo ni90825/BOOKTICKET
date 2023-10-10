@@ -43,7 +43,7 @@ class DetailsScreen extends StatelessWidget {
   final screensWidget = Row(
     children: [
       const Text(
-        "English",
+        "Tamil",
         style: TextStyle(
           color: MyTheme.splash,
         ),
