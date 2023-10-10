@@ -81,7 +81,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Text(AuthController.instance.user!.displayName ?? "Name"),
+                  Text(AuthController.instance.user!.displayName ?? "Find Seats"),
                   GestureDetector(
                     onTap: () {
                       Get.to(() => const SelectionLocationScreen());

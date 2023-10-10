@@ -10,12 +10,6 @@ class SplashScreen extends StatefulWidget {
   @override
   State<SplashScreen> createState() => _SplashScreenState();
 }
-
-// In Flutter, the late keyword is used to indicate that a non-nullable variable will be initialized later in the code.
-
-// vsync try to sync a SingleTickerProviderStateMixin with animation
-
-// 
 class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderStateMixin{
   late AnimationController _animationController; // control the animation
    late Animation<double> _animation; // animation itself

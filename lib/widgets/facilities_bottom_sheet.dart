@@ -11,42 +11,18 @@ import '../utils/mytheme.dart';
 class FacilitesBottomSheet extends StatelessWidget {
   final dynamic model;
   const FacilitesBottomSheet({Key? key, required this.model}) : super(key: key);
-  static const CameraPosition _kGooglePlex = CameraPosition(
-    target: LatLng(37.42796133580664, -122.085749655962),
-    zoom: 14.4746,
-  );
   @override
   Widget build(BuildContext context) {
     return Stack(
       children: [
         Container(
-          margin: const EdgeInsets.only(top: 40),
+          margin: const EdgeInsets.only(top: 58),
           height: double.maxFinite,
           width: double.maxFinite,
           color: Colors.white,
           padding: const EdgeInsets.all(20),
           child: Column(
             children: [
-              Container(
-                height: 150,
-                decoration: BoxDecoration(borderRadius: BorderRadius.circular(10)),
-                child: ClipRRect(
-                  borderRadius: BorderRadius.circular(10),
-                  child: GoogleMap(
-                    mapType: MapType.normal,
-                    initialCameraPosition: _kGooglePlex,
-                    gestureRecognizers: <Factory<OneSequenceGestureRecognizer>>{
-                      Factory<OneSequenceGestureRecognizer>(
-                        () => EagerGestureRecognizer(),
-                      )
-                    },
-                    onMapCreated: (GoogleMapController controller) {
-                      //_controller.complete(controller);
-                    },
-                    zoomControlsEnabled: false,
-                  ),
-                ),
-              ),
               const SizedBox(
                 height: 10,
               ),
@@ -65,7 +41,7 @@ class FacilitesBottomSheet extends StatelessWidget {
                       ),
                     ),
                     TextSpan(
-                      text: LocationController.instance.city.value,
+                      text: "chembur",
                       style: const TextStyle(color: Color(0xff999999), fontSize: 14),
                     ),
                   ],

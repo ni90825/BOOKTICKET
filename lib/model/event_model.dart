@@ -26,27 +26,27 @@ class EventModel {
     );
   }
 
-  Map<String, dynamic> toMap() {
-    return {
-      'title': title,
-      'description': description,
-      'bannerUrl': bannerUrl,
-      'date': date,
-    };
-  }
+  // Map<String, dynamic> toMap() {
+  //   return {
+  //     'title': title,
+  //     'description': description,
+  //     'bannerUrl': bannerUrl,
+  //     'date': date,
+  //   };
+  // }
 
-  factory EventModel.fromMap(Map<String, dynamic> map) {
-    return EventModel(
-      title: map['title'] ?? '',
-      description: map['description'] ?? '',
-      bannerUrl: map['bannerUrl'] ?? '',
-      date: map['date'] ?? '',
-    );
-  }
+  // factory EventModel.fromMap(Map<String, dynamic> map) {
+  //   return EventModel(
+  //     title: map['title'] ?? '',
+  //     description: map['description'] ?? '',
+  //     bannerUrl: map['bannerUrl'] ?? '',
+  //     date: map['date'] ?? '',
+  //   );
+  // }
 
-  String toJson() => json.encode(toMap());
+  // String toJson() => json.encode(toMap());
 
-  factory EventModel.fromJson(String source) => EventModel.fromMap(json.decode(source));
+  // factory EventModel.fromJson(String source) => EventModel.fromMap(json.decode(source));
 
   @override
   String toString() {

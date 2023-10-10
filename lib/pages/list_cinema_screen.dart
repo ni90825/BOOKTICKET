@@ -7,7 +7,7 @@ import '../controllers/common_controller.dart';
 import '../controllers/seat_selection_controller.dart';
 import '../utils/screen_selection_block.dart';
 import '../utils/custom_calendar.dart';
-import '../controllers/calendar_controller.dart';
+import '../../controllers/calendar_controller.dart';
 import '../model/movie_model.dart';
 import '../utils/dummy_data.dart';
 import '../utils/mytheme.dart';
@@ -71,24 +71,14 @@ class _ListCinemaScreenState extends State<ListCinemaScreen> {
 
                       if (selectedDate == todayDate) {
                         text = "Today, ";
-                      } else if (selectedDate == tomorrowDate) {
-                        text = "Tomorrow, ";
-                      } else {
-                        text = DateFormat("EEE").format(commonController.selectedMovieDate.value) + ", ";
                       }
+                      // } else if (selectedDate == tomorrowDate) {
+                      //   text = "Tomorrow, ";
+                      // } else {
+                      //   text = DateFormat("EEE").format(commonController.selectedMovieDate.value) + ", ";
+                      // }
 
                       return ListTile(
-                        // onTap: () {
-                        //   showModalBottomSheet(
-                        //           context: context,
-                        //           builder: (_) => CustomCalendar(),
-                        //           constraints: BoxConstraints(maxHeight: MediaQuery.of(context).size.height * 0.35))
-                        //       .then((value) => setState(() {
-                        //             if (value != null) {
-                        //               selectedDate = format.format(value);
-                        //             }
-                        //           }));
-                        // },
                         horizontalTitleGap: 0,
                         textColor: Colors.white,
                         leading: const Icon(

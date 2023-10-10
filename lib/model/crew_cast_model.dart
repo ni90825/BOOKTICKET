@@ -26,27 +26,27 @@ class CrewCastModel {
     );
   }
 
-  Map<String, dynamic> toMap() {
-    return {
-      'movieId': movieId,
-      'castId': castId,
-      'name': name,
-      'image': image,
-    };
-  }
+  // Map<String, dynamic> toMap() {
+  //   return {
+  //     'movieId': movieId,
+  //     'castId': castId,
+  //     'name': name,
+  //     'image': image,
+  //   };
+  // }
 
-  factory CrewCastModel.fromMap(Map<String, dynamic> map) {
-    return CrewCastModel(
-      movieId: map['movieId'] ?? '',
-      castId: map['castId'] ?? '',
-      name: map['name'] ?? '',
-      image: map['image'] ?? '',
-    );
-  }
+  // factory CrewCastModel.fromMap(Map<String, dynamic> map) {
+  //   return CrewCastModel(
+  //     movieId: map['movieId'] ?? '',
+  //     castId: map['castId'] ?? '',
+  //     name: map['name'] ?? '',
+  //     image: map['image'] ?? '',
+  //   );
+  // }
 
-  String toJson() => json.encode(toMap());
+  // String toJson() => json.encode(toMap());
 
-  factory CrewCastModel.fromJson(String source) => CrewCastModel.fromMap(json.decode(source));
+  // factory CrewCastModel.fromJson(String source) => CrewCastModel.fromMap(json.decode(source));
 
   @override
   String toString() {

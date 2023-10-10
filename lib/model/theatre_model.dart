@@ -21,7 +21,7 @@ class TheatreModel {
       "Hotel",
       "Park",
     ],
-    this.fullAddress = "City Mall, 2 nd floor Park Road, Civil Lines, Golghar, Gorakhpur, Uttar Pradesh 273001",
+    this.fullAddress = "City Mall, 2 nd floor Park Road, Civil Lines,chembur 273001",
     this.timings = const [
       "10:00 AM",
       "1:30 PM",
@@ -55,33 +55,33 @@ class TheatreModel {
     );
   }
 
-  Map<String, dynamic> toMap() {
-    return {
-      'id': id,
-      'name': name,
-      'coordinates': coordinates,
-      'facilites': facilites,
-      'fullAddress': fullAddress,
-      'timings': timings,
-      'avalableScreens': avalableScreens,
-    };
-  }
+  // Map<String, dynamic> toMap() {
+  //   return {
+  //     'id': id,
+  //     'name': name,
+  //     'coordinates': coordinates,
+  //     'facilites': facilites,
+  //     'fullAddress': fullAddress,
+  //     'timings': timings,
+  //     'avalableScreens': avalableScreens,
+  //   };
+  // }
 
-  factory TheatreModel.fromMap(Map<String, dynamic> map) {
-    return TheatreModel(
-      id: map['id'] ?? '',
-      name: map['name'] ?? '',
-      coordinates: map['coordinates'],
-      facilites: List<String>.from(map['facilites']),
-      fullAddress: map['fullAddress'] ?? '',
-      timings: List<String>.from(map['timings']),
-      avalableScreens: List<String>.from(map['avalableScreens']),
-    );
-  }
+  // factory TheatreModel.fromMap(Map<String, dynamic> map) {
+  //   return TheatreModel(
+  //     id: map['id'] ?? '',
+  //     name: map['name'] ?? '',
+  //     // coordinates: map['coordinates'],
+  //     // facilites: List<String>.from(map['facilites']),
+  //     // fullAddress: map['fullAddress'] ?? '',
+  //     timings: List<String>.from(map['timings']),
+  //     avalableScreens: List<String>.from(map['avalableScreens']),
+  //   );
+  // }
 
-  String toJson() => json.encode(toMap());
+  // String toJson() => json.encode(toMap());
 
-  factory TheatreModel.fromJson(String source) => TheatreModel.fromMap(json.decode(source));
+  // factory TheatreModel.fromJson(String source) => TheatreModel.fromMap(json.decode(source));
 
   @override
   String toString() {
